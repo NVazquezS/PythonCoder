@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <h1>Listado de Familiares</h1>
 
-<table>
-<tr>
-  <td><strong>ID</strong></td>
-  <td><strong>Nombre</strong></td>
-  <td><strong>Apellido</strong></td>
-  <td><strong>DNI</strong></td>
-  <td><strong>Fecha_Nacimiento</strong></td>
-</tr>
-<tr>
-  {% for familiar in familia %}
-
-  <p>{{familia.ID}} </p>
-  <p>{{familia.Nombre}}</p>
-  <p>{{familia.Apellido}}</p>
-  <p>{{familia.DNI}}</p>
-  <p>{{familia.Fecha_Nacimiento}}</p>
-  {% endfor %}
-<body>
-
-</table>
-</body>
-</html>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">DNI</th>
+        <th scope="col">Fecha_Nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for familiar in familia %}
+        
+      <tr>
+        <th scope="row">{{familiar.id}}</th>
+        <td>{{familiar.nombre}}</td>
+        <td>{{familiar.apellido}}</td>
+        <td>{{familiar.dni}}</td>
+        <td>{{familiar.fec_nac}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVT_Nicolas_Vazquez.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'D:\Curso Python\Curso CH\MVT_Nicolas_Vazquez\MVT_Nicolas_Vazquez\Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
